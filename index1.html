@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Family Book
+        </title>
+    </head>
+    <body>
+        <center>
+            <h2>My Family Book</h2>
+            <img src="book.jpg" id="img" style="margin-top:5%;height:50%;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4 id="name"></h4>
+            <button id="next" onclick="imagechange()" >Next</button>
+        </center>
+        <script>
+var i=0;
+
+            var img = ["fat.jpg","moth.png"];
+
+            var names = ["Deepak Marwaha","Asha Rani"];
+
+            function imagechange(){
+                document.getElementById("img").src=img[i];
+                document.getElementById("name").innerHTML = names[i];
+                i++
+
+               
+            }
+
+        </script>
+    </body>
+</html>
